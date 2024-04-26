@@ -44,6 +44,8 @@ sprint:
     mov rax, 1
     syscall
 
+    ret
+
 
 # +----------------+
 # | void exit(int) |
@@ -54,3 +56,5 @@ sprint:
 exit:
     mov rax, 60
     syscall
+
+    ret
