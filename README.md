@@ -10,7 +10,7 @@ A respository to create a library in assembly with some utilities functions
 | `sprint` | Write the string into stdin |
 | `exit` | Exit from the program with given status |
 | `salloc` | Allocate a block of memory and return its address |
-| `sfree` | Dealloacte a block of memory from given address |
+| `sfree` | Deallocate a block of memory from given address |
 
 ## 🪅 Usage
 
