@@ -20,6 +20,8 @@
 .global slen
 .global sprint
 .global exit
+.global salloc
+.global sfree
 # +-----------------------+
 
 # +-----------------+
