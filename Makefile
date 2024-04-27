@@ -1,8 +1,9 @@
-.PHONY := build build-test
+.PHONY := build
 
 build:
 	@as -o libsad.so src/main.s
 
-build-test:
-	@as -o test/test.o test/test.s
-	@ld -o test/test -l sad test/test.o
+test_%: test/test_%.s
+	@as -o test/test_$*.o test/test_$*.s
+	@ld -o test/test_$* -l sad test/test_$*.o
+	@rm -fr test/test_$*.o
